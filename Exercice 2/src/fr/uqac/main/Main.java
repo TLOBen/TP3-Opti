@@ -13,5 +13,9 @@ public class Main {
      */
     public static void main(String[] args) {
         Simulation simulation = new Simulation(1000);
+        simulation.addVoiture("A", 210, 0.3);
+        simulation.addVoiture("B", 205, 0.15);
+        simulation.addVoiture("C", 200, 0.1);
+        simulation.simuler();
     }
 }

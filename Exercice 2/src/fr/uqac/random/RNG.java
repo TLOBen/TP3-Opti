@@ -12,10 +12,10 @@ public class RNG {
     
     public RNG() {
         this.rng = new Random();
-        this.rng.setSeed(System.currentTimeMillis());
+        this.rng.setSeed(System.nanoTime());
     }
     
-    private double generateNumber() {
+    public double generateNumber() {
         return this.rng.nextDouble();
     }
 }
